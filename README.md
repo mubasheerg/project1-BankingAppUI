@@ -1,1 +1,1 @@
-# trainingproject1-BankingAppUI
+# project1-BankingAppUI
