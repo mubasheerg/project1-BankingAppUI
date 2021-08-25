@@ -1,0 +1,216 @@
+
+
+/* for all elements in css (Universal Selector (*) ) */
+
+/* making all elements in html page as 0 marging nad padding*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* for font change */
+body {
+	background-color: rgb(192, 192, 192);
+	font-family: 'Poppins', sans-serif;
+	overflow: hidden;
+}
+
+/*for grid view of 2 columns*/
+.container {
+	width: 90vw;
+	height: 90vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 7rem;
+	padding: 0 2rem;
+}
+
+/*to fix the image in center of the page*/
+.img {
+	display: inline-flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+/*width of the image */
+.img img {
+	width: 700px;
+}
+
+/*to make the form and avatar image to center of the page*/
+.login-content {
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+/*avatar width*/
+.avatar img {
+	width: 125px;
+}
+
+/*to change the for width*/
+form {
+	width: 360px;
+}
+
+/* the h2 --heading in form #333-
+ gray like color */
+form h2 {
+	font-size: 2.9rem;
+	margin: 15px 0;
+	color: maroon;
+}
+
+/*to change  username and password margins and paddings 
+The grid-template-columns property specifies the number (and the widths) of columns in a grid layout. */
+/* and the silver line for name and password using borderbottom */
+.input-div {
+	position: relative;
+	display: grid;
+	grid-template-columns: 7% 93%;
+	margin: 25px 0;
+	padding: 5px 0;
+	border-bottom: 2px solid silver;
+}
+
+/* to make the user icon as center */
+.i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-div>div {
+	position: relative;
+	height: 45px;
+}
+
+.pass {
+	margin-right: -300px;
+	cursor: pointer;
+}
+/* username and password place*/
+.input-div>div h5 {
+	position: absolute;
+	left: 20px;
+	top: 40%;
+	transform: translateY(-50%);
+	color: white;
+	transition: .3%;
+}
+
+/* to hide input text boxes*/
+.input-div>div>input {
+	position: absolute;
+	width: 1005;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border: none;
+	background: none;
+	outline: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	font-family: 'Poppins', sans-serif;
+	color: black;
+	cursor: default;
+}
+
+/* login button desiggn*/
+.btn {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: lime;
+	border:medium;
+	background-image: linear-gradient(to right, black, black, gray);
+	background-size: 150%;
+	font-size: 1.2rem;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .9s;
+}
+
+.btn:hover {
+	background-position: right;
+}
+
+/*username and password to top and size of that */
+h5 {
+	top: -5px;
+	font-size: 15px;
+}
+
+/* for RWD
+Responsive web Design*/
+@media screen and (max-width: 1050px) {
+	.container {
+		grid-gap: 5rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	form {
+		width: 290px;
+	}
+	.login-content h2 {
+		font-size: 2.4rem;
+		margin: 8px 0;
+	}
+	.img img {
+		width: 400px;
+	}
+}
+
+.btn:hover {
+	background-position: right;
+}
+
+/*username and password to top and size of that */
+.input-div.focus div h5 {
+	top: -5px;
+	font-size: 15px;
+}
+
+/* for RWD
+Responsive web Design*/
+@media screen and (max-width: 1050px) {
+	.container {
+		grid-gap: 5rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	form {
+		width: 290px;
+	}
+	.login-content
+ 
+h2 {
+		font-size: 2.4rem;
+		margin: 8px 0;
+	}
+	.img
+ 
+img {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+	.img {
+		display: none;
+	}
+	.login-content {
+		justify-content: center;
+	}
+}

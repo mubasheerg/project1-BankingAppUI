@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+
+.avatar img {
+	width: 150px;
+	height: 150px;
+}
+
+/* for font change */
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+fieldset {
+	border: none;
+	border-radius: 3px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	align-items: center;
+}
+
+form {
+	align-items: center;
+}
+
+label {
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px 6px;
+	text-align: left;
+	width: 200px;
+}
+
+input {
+	font-size: inherit;
+	padding: 5px 4px;
+}
+
+.btn {
+	display: inline;
+	margin-bottom: 10px;
+	padding: 5px;
+	width: 10%;
+	align-self: center;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, rgb(255, 255, 255),
+		rgb(255, 255, 255), #999);
+	background-size: 100%;
+	color: black;
+	font-family: 'Poppins', sans-serif;
+	cursor: pointer;
+	transition: .9s;
+	align-items: center;
+}
+
+.btn:hover {
+	background-position: bottom;
+}

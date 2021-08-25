@@ -1,0 +1,212 @@
+@charset "ISO-8859-1";* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	align-items: center;
+}
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bankmainpage.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.logo {
+	float: left;
+	margin-left: 30px;
+}
+.logo img {
+	width: 20%;
+	padding: 30px 0;
+}
+.welcome-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+.welcome-text h1 {
+	text-align: center;
+	color: rgb(192, 192, 192);
+	text-transform: uppercase;
+	font-size: 40px;
+}
+.welcome-text h1 span {
+	color: rgb(128, 0, 64);
+}
+.welcome-text a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover {
+	background: #fff;
+	color: #333;
+}
+
+h4{
+	padding:10px;
+	color: rgb(64, 0, 0);
+	font-family: cursive;
+	font-style: italic;
+	font-size: 6;
+	text-align: center;
+}
+
+h5{
+	padding:20px;
+	color:rgb(128, 255, 255);
+	font-family: cursive;
+	font-style: inherit;
+	font-size: large;	
+	text-align: center;
+}
+h3{
+	padding:10px;
+	color:gray;
+	font-family: sans-serif;
+	font-style: oblique;
+	font-size: smallmedium;	
+	text-align: center;
+}
+footer {
+ 
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(128, 128, 128);
+  color: white;
+  text-align: center;
+}
+.blackclass
+{
+	padding:20px;
+	color: olive;
+	font-family: cursive;
+	font-size:xx-large;
+	text-align: center;
+}
+.contact{
+	
+	padding:20px;
+	color: black;
+	text-align: center;
+	font-family: fantasy;
+}
+.posted
+{
+	padding: 10px;
+	color: olive;
+	font-family: cursive;
+	font-style: oblique;
+	text-align: center;
+}
+
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+	
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+}
+.navbar {
+    overflow: hidden;
+    float: right;
+	list-style: none;
+	margin-top: 30px;
+	margin-right: 100px;
+  }
+  
+  .navbar a {
+    float:left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .navbar a:hover {
+  	border-radius: 5px;
+	background-color: rgb(0, 255, 64);
+  }
+   .dropdown:hover .dropbtn {
+  	border-radius: 5px;
+	background-color: rgb(0, 255, 64);
+   }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(192, 192, 192);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display:block;
+  }
